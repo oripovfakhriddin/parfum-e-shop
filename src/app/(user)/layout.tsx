@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ChildrenType from '../../types/children';
 import Navbar from '@/components/navbar';
 
 const UserLayout = ({children}:ChildrenType) => {
   return (
-    <div>
+    <Fragment>
       <Navbar/>
       {children}
-    </div>
+    </Fragment>
   )
 }
 

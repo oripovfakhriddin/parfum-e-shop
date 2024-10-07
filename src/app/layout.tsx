@@ -23,7 +23,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png" />
         <link rel="manifest" href="" />
       </head>
-      <body className={montserrat.className}>
+      <body className={`${montserrat.className} dark:bg-boxdark-2`}>
         {children}
       </body>
     </html>
