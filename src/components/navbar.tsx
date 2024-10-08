@@ -84,9 +84,27 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+        { isNavbar && 
+        <ul className="absolute md:hidden top-[56px] right-0 bg-slate-300 ">
+          {menuItems.map((item, index)=> {return <li key={index}><NavLink  item={item} /></li>})}
+              <li>
+                <Link href={"/auth/login"} className={`flex items-center flex-col text-primary`}>
+                  <div><LoginIcon /></div>
+                  <p>Kirish</p>
+                </Link>
+              </li>
+              <li>
+                <Link href={"/account"} className={`flex items-center flex-col`}>
+                  <div><AccountIcon /></div>
+                  <p>Profil</p>
+                </Link>
+              </li>
+          </ul>
+          }
       </nav>
       <ThemeToggle />
       </div>
+      
       
       
     </header>
