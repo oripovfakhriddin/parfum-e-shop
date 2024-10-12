@@ -7,6 +7,7 @@ import DarkIcon from '../../public/icons/dark-icon';
 
 const ThemeToggle = () => {
   const [darkMode, setDarkMode] = useState(false)
+
 useEffect(()=>{
   const theme = localStorage.getItem(Theme)
   if (theme === "dark") {
@@ -27,7 +28,7 @@ useEffect(()=>{
   return (
     <Fragment>
       <div>
-        <button className='p-1 text-gray-500 rounded-lg md:hidden hover:bg-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 focus:outline-none' onClick={()=>{setDarkMode(!darkMode)}}>
+        <button className='p-1 text-gray-500 rounded-lg transition hover:bg-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 focus:outline-none' onClick={()=>{setDarkMode(!darkMode)}}>
           {darkMode ? <LightIcon /> : <DarkIcon />}
         </button>
       </div>

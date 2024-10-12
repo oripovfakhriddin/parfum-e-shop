@@ -12,9 +12,9 @@ const NavLink = ({ item }: {item: ItemProps}  ) => {
   const pathname = usePathname();
   const isActive = pathname === item.href ? true: false
   return (
-    <Link href={item.href} className={`${isActive ? "text-red-600" : "text-primary"} flex items-center flex-col`}>
+    <Link href={item.href} className={`${isActive ? "text-red-600" : "text-primary"} flex md:gap-0 gap-1 items-center md:flex-col`}>
      <div>{item.icon}</div>
-     <p>{item.label}</p>
+     <p className="text-sm">{item.label}</p>
     </Link>
   );
 };
