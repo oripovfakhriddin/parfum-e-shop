@@ -1,5 +1,5 @@
 const ENG = {
-    homePage: "Home Page"
+  homePage: "Home Page",
 };
 
 export default ENG;

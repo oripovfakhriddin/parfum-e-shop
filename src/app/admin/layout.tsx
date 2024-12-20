@@ -1,3 +1,5 @@
+"use client";
+
 import ChildrenType from "@/types/children";
 import React from "react";
 
