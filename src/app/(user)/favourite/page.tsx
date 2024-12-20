@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const FavouritePage = () => {
-  return (
-    <div>
-      FavouritePage
-    </div>
-  )
-}
+  return <div>FavouritePage</div>;
+};
 
-export default FavouritePage
+export default FavouritePage;

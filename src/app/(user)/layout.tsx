@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react'
-import ChildrenType from '../../types/children';
-import Navbar from '@/components/navbar';
+import React, { Fragment } from "react";
+import ChildrenType from "../../types/children";
+import Navbar from "@/components/navbar";
 
-const UserLayout = ({children}:ChildrenType) => {
+const UserLayout = ({ children }: ChildrenType) => {
   return (
     <Fragment>
-      <Navbar/>
+      <Navbar />
       {children}
     </Fragment>
-  )
-}
+  );
+};
 
-export default UserLayout
+export default UserLayout;

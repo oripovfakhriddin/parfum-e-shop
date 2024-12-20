@@ -1,4 +1,4 @@
 const Theme = "parfum-theme";
-const Language = "parfum-language";
+const LANGUAGE_KEY = "parfum-language";
 
-export { Theme, Language };
+export { Theme, LANGUAGE_KEY };
